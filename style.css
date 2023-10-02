@@ -10,6 +10,28 @@ body {
     background-color: rgb(247, 247, 247);
 }
 
+body.dark-mode {
+    background-color: #222831;
+    color: #ffffff;
+}
+
+
+.dark-mode .section__text__p2,
+.dark-mode .section__text__p1,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode a,
+.dark-mode p {
+    color: #ffffff;
+}
+
+.dark-mode .details-container,
+.dark-mode .contact-info-upper-container{
+    background-color: #2B343E;
+    border-color: #ffffff;
+}
+
 html {
     scroll-behavior: smooth;
 }
