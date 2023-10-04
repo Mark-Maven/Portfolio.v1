@@ -15,6 +15,66 @@ body.dark-mode {
     color: #ffffff;
 }
 
+/* Container for the switch and text */
+.switch-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Text label */
+.label-text {
+    margin-right: 10px; /* Add spacing between text and switch */
+}
+
+/* Container for the switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px; /* Half the original width */
+    height: 17px; /* Half the original height */
+}
+
+/* The hidden checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 17px; /* Half the original border-radius */
+    transition: 0.4s;
+}
+
+/* The circle inside the slider */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px; /* Half the original height */
+    width: 13px; /* Half the original width */
+    left: 2px; /* Half the original left position */
+    bottom: 2px; /* Half the original bottom position */
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* Styling for the slider when it's checked */
+.switch input:checked + .slider {
+    background-color: #2196F3;
+}
+
+/* Styling for the circle when it's checked */
+.switch input:checked + .slider:before {
+    transform: translateX(13px); /* Half the original translation */
+}
 
 .dark-mode .section__text__p2,
 .dark-mode .section__text__p1,
@@ -27,9 +87,11 @@ body.dark-mode {
 }
 
 .dark-mode .details-container,
-.dark-mode .contact-info-upper-container{
+.dark-mode .contact-info-upper-container,
+.dark-mode button{
     background-color: #222831;
     border-color: #ffffff;
+    color: #ffffff;
 }
 
 html {
