@@ -6,6 +6,12 @@ function toggleMenu() {
 
 }
 
-document.getElementById("dark-mode-toggle").addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-});
+const modeSwitch = document.getElementById('modeSwitch');
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+
+    // Add event listener to the checkbox to trigger the toggleDarkMode function
+    modeSwitch.addEventListener('change', toggleDarkMode);
