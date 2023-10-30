@@ -6,12 +6,16 @@
     <title>Mark's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pinyon+Script&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="desktop-nav">
-       <div class="logo">Creative Developer</div> 
-       <div>
-        <ul class="nav-links">
+       <div class="logo"><p id="changing-text"></p></div> 
+       <div id="desktop-nav-2">
+        <ul class="nav-links" id="nav-menu">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -20,15 +24,17 @@
 
        </div>
        <div class="switch-container">
-            <label class="label-text">Dark Mode</label>
+            <img src="./assets/moon.png" alt="moon" id="moon">
             <label class="switch">
             <input type="checkbox" id="modeSwitch">
             <span class="slider"></span>
             </label>
        </div>
+
     </nav>
+    
     <nav id="hamburger-nav">
-        <div class="logo">Creative Developer</div>
+        <p id="signature">Mark Maven</p>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -89,7 +95,7 @@
                      and user-friendly experiences that drive business growth. I'm driven by innovation  and thrive on
                      embracing new challenges, always staying at the fore-front of emerging technologies and design trends.
                      Collaboration is at the core of my process, and I'm here to turn your vision into a digital masterpiece.
-                      Let's create something extraordinary together!
+                    Let's create something extraordinary together!
                     </p>
                 </div>
             </div>
@@ -279,9 +285,9 @@
             </div>
     </section>
     <footer>
-        <nav>
+        <nav id="bottom-nav">
             <div class="nav-links-container">
-                <ul class="nav-links">
+                <ul class="nav-links" id="footer-nav">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -289,7 +295,7 @@
                 </ul> 
             </div>
         </nav>
-        <p>Handcrafted by me &#169; 2023</p>
+        <p id="copyright">Handcrafted by me &#169; 2023</p>
     </footer>
     
    <script src="script.js"></script> 
