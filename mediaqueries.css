@@ -6,17 +6,54 @@
     .about-containers {
         flex-wrap: wrap;
     }
+
 }
 
 @media screen and (max-width: 700px) {
-    #desktop-nav{
+    #desktop-nav-2{
         display: none;
+    }
+
+    #desktop-nav{
+        height: 10vh;
+        padding: 5vh;
+    }
+
+    #hamburger-nav{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        padding-bottom: 5vh;
+        
+    }
+
+    #about{
+        margin-top: 40vh;
+    }
+
+
+
+    #signature{
+        font-size: 2rem;
+        
+    }
+
+
+    #nav-menu{
+        display: none;
+    }
+
+    #changing-text {
+        width: 200px;
+        font-size: 1rem;
     }
 
     #profile .title {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
 
     #profile {
         padding: 0;
@@ -29,6 +66,7 @@
     #socials-container {
         padding-top: 20px ;
     }
+
     #hamburger-nav {
         display: flex;
     }
@@ -56,6 +94,15 @@
     }
     .about-containers {
         margin-top: 0;
+    }
+
+    #contact {
+        padding-top: 10vh;
+    }
+
+    #copyright {
+        padding-top: 15vh;
+        padding-bottom: 5vh;
     }
 }
 
@@ -85,6 +132,7 @@
     }
     .contact-info-container {
         margin: 0;
+        padding-left: 0;
     }
     .contact-info-container p,
     .nav-links li a {
@@ -117,3 +165,39 @@
         padding: 20px;
     }
 }
+
+@media screen and (min-width: 700px) {
+    .hamburger-icon{
+        display: none;
+        
+    }
+
+    body {
+        padding-left: 20vh;
+        padding-right: 20vh;
+
+    }
+
+    #profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: min-content;
+        padding-top: 10vh ;
+        padding-bottom: 10vh;
+    }
+
+    #about {
+        padding-bottom: 10vh;
+    }
+
+    #projects {
+        padding-top: 10vh;
+    }
+
+    #contact {
+        padding-top: 10vh;
+    }
+
+}
+
